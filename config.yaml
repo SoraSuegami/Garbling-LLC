@@ -56,7 +56,7 @@ Menus:
 params:
   title: "合同会社Garbling"
   description: 合同会社Garbling
-  # staticPath: ""  # The path to serve the static files from
+  staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
@@ -128,7 +128,7 @@ params:
     title: "合同会社Garbling"
     subtitle: "Garbling LLC"
     content: "高機能暗号で、システムの安全性とデータのプライバシーを守ります。"
-    image: /images/hero.png
+    image: /fav.png
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
@@ -152,7 +152,7 @@ params:
   about:
     enable: true
     title: "Garblingの役割"
-    image: "/images/me.png"
+    image: "about.png"
     content: |-
       今後より多くの場面で、資産や生命、機密情報を扱う業務がシステム、特にAIによって自動化されます。そこで課題になるのが、システムの安全性とデータのプライバシーです。これらを保護するために、合同会社Garblingは高機能暗号技術を用いたソリューションを提供します。
     
@@ -165,42 +165,6 @@ params:
         - "ブロックチェーン"
         - "AIセキュリティ"
 
-  # Experience
-  experience:
-    enable: false
-    title: "研究開発成果"
-    items:
-      - job: "Suegami, S. (2022). Cryptographic obfuscation for smart contracts: Trustless bitcoin bridge and more."
-        company: "Publications"
-        companyUrl: "https://example.com"
-        info:
-          enable: false
-        date: "Blockchain: Research and Applications, 100118."
-        content: ""
-
-      - job: "Suegami, S., & Shibano, K. (2023, May). Contract Wallet Using Emails."
-        company: "Publications"
-        companyUrl: "https://example.com"
-        info:
-          enable: false
-        date: "IEEE International Conference on Blockchain and Cryptocurrency (ICBC) (pp. 1-2). IEEE."
-        content: ""
-
-      - job: "Suegami, S., & Shibano, K. (2023, May). Contract Wallet Using Emails."
-        company: "Publications"
-        companyUrl: "https://example.com"
-        date: "Sep 2020 - Dec 2021"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
-        info:
-          enable: true
-          content: I worked as a software developer for more than one year in Amazon.
-        content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
 
       # - job: "Junior Software Developer"
       #   company: "Apple"
@@ -236,120 +200,164 @@ params:
       #   date: "Feb 2016 - Mar 2017"
       #   content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
 
-  # Education
   education:
-    enable: false
-    # title: "Custom Name"
+    enable: true
+    title: "研究開発実績"
     index: false
     items:
-      - title: "Master of Business Administration"
+      - title: "Cryptographic obfuscation for smart contracts: Trustless bitcoin bridge and more."
         school:
-          name: "University of California, Berkeley"
-          url: "https://example.org"
-        date: "2013 - 2015"
-        GPA: "3.8 out of 5.0"
+          name: "Suegami, S."
+        date: "2022"
+        featuredLink:
+          enable: true
+          url: "https://doi.org/10.1016/j.bcra.2022.100118"
         content: |-
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-      - title: "Bachelor of Science in Computer Science"
+          Blockchain: Research and Applications, 100118.
+      - title: "Contract Wallet Using Emails."
         school:
-          name: "Massachusetts Institute of Technology"
-          url: "https://example.org"
-        date: "2009 - 2013"
-        GPA: "3.9 out of 5.0"
+          name: "Suegami, S., & Shibano, K."
+        date: "2023, May"
+        featuredLink:
+          enable: true
+          url: "https://arxiv.org/pdf/2312.04173.pdf"
         content: |-
-          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
-          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
-          - Face mask detection using a single convolutional neural network.
+          In 2023 IEEE International Conference on Blockchain and Cryptocurrency (ICBC) (pp. 1-2). IEEE.
+      - title: "Self-Examination Mechanism: 説明可能 AI を用いた敵対的攻撃に対する軽量な防御機構."
+        school:
+          name: "末神奏宙, 小栗悠太郎, 趙在瀛, 加賀谷湧, 向井皇喜, 吉田舜, & 山崎俊彦."
+        date: "2023"
+        featuredLink:
+          enable: true
+          url: "https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_2A1GS203/_pdf/-char/ja"
+        content: |-
+          In 人工 知能学会全国大会論文集 第 37 回 (2023) (pp. 2A1GS203-2A1GS203). 一般社団法人 人工知能学会.
+      - title: "Octopus Contract and its Applications."
+        school:
+          name: "Suegami, S., & Hioki, L."
+        date: "2023, Dec"
+        featuredLink:
+          enable: true
+          url: "https://github.com/SoraSuegami/octopus-contract-paper/blob/11ce8419a831c5db901ba9670af50335ae1e0865/octopus_contract_swe_1215.pdf"
+        content: |-
 
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-        featuredLink:
-          enable: true
-          name: "My academic record"
-          url: "https://example.com"
-      - title: "High School"
+      - title: "Self-Examination Mechanism: Improving Standard Accuracy in Adversarial Purification."
         school:
-          name: "Thomas Jefferson High School for Science and Technology."
-          url: "https://example.org"
-        GPA: "4.2 out of 5.0"
+          name: "Suegami, S., Oguri, Y., Zhao, Z., Kagaya, Y., and Yamasaki, T."
+        date: "2024"
+        # featuredLink:
+          # enable: true
+          # url: "https://doi.org/10.1016/j.bcra.2022.100118"
+        content: |-
+          IVSP 2024.
+
+      - title: "ZK Email: On-chain verification of emails using ZKP."
+        date: "2023, Sep"
         featuredLink:
           enable: true
-          url: "https://example.com"
+          url: "https://speakerdeck.com/sorasuegami/ethcon-korea-2023-zk-email-on-chain-verification-of-emails-using-zkp"
+        content: |-
+          Ethcon 2023 in Seoul, Korea.
+
+      - title: "ZK Email: Email Wallet and Identity Attestations."
+        date: "2023, Nov"
+        featuredLink:
+          enable: true
+          url: "https://www.youtube.com/watch?v=qUYBja0glio&list=PL-ZQkds07L_oJA72_JCXK7_OnSNTevOks&index=27"
+        content: |-
+           Progcrypto in Istanbul, Turkey.
+
+      - title: "Grant for the development of RSA verification circuit in halo2 from Ethereum Foundation."
+        date: "2022"
+        featuredLink:
+          enable: true
+          url: "https://blog.ethereum.org/2022/12/07/esp-allocation-q3-22"
+      
+      - title: "Grant for the development of ZKEmail from Ethereum Foundation."
+        date: "2023"
+        featuredLink:
+          enable: true
+          url: "https://blog.ethereum.org/2023/08/15/allocation-update-q2-23"
+      
+      - title: "Grant for the development of Email Wallet from Ethereum Foundation."
+        date: "2023"
+        featuredLink:
+          enable: true
+          url: "https://blog.ethereum.org/2024/02/20/esp-allocation-q423 "
+
+      
 
   # Achievements
-  achievements:
-    enable: false
-    # title: "Custom Name"
-    items:
-      - title: Google kickstart runner
-        content: I solved all problems with optimal solution.
-        url: https://example.com
-        image: /images/achievment.jpg
-      - title: Facebook Hackathon Winner
-        content: Developed a product using Artificial Intelligence.
-        image: /images/achievment.jpg
-      - title: Hugo Profile
-        content: Developed a theme and getting 1K+ downloads per month.
-        url: "https://github.com/gurusabarish/hugo-profile"
-        image: /images/achievment.jpg
-      - title: Microsoft Imagine Runner
-        content: We are developed a product which can help others.
-      - title: Google Summer of Code
-        content: Contributed to a open source project.
-        url: https://example.com
-
+  # achievements:
+  #   enable: true
+  #   title: "研究開発実績"
+  #   items:
+  #     - title: "Suegami, S. (2022). Cryptographic obfuscation for smart contracts: Trustless bitcoin bridge and more. Blockchain: Research and Applications, 100118."
+  #       content: I solved all problems with optimal solution.
+  #       url: https://doi.org/10.1016/j.bcra.2022.100118
+  #       # image: /images/achievment.jpg
+  #     - title: "Suegami, S., & Shibano, K. (2023, May). Contract Wallet Using Emails. In 2023 IEEE International Conference on Blockchain and Cryptocurrency (ICBC) (pp. 1-2). IEEE."
+  #       content: Developed a product using Artificial Intelligence.
+  #       url: https://arxiv.org/pdf/2312.04173.pdf
+  #       # image: /images/achievment.jpg
+  #     - title: "末神奏宙, 小栗悠太郎, 趙在瀛, 加賀谷湧, 向井皇喜, 吉田舜, & 山崎俊彦. (2023). Self-Examination Mechanism: 説明可能 AI を用いた敵対的攻撃に対する軽量な防御機構. In 人工 知能学会全国大会論文集 第 37 回 (2023) (pp. 2A1GS203-2A1GS203). 一般社団法人 人工知能学会."
+  #       content: Developed a theme and getting 1K+ downloads per month.
+  #       url: "https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_2A1GS203/_pdf/-char/ja"
+  #       # image: /images/achievment.jpg
+  #     - title: "Suegami, S., & Hioki, L. (2023, Dec). Octopus Contract and its Applications."
+  #       content: We are developed a product which can help others.
+  #       url: "https://github.com/SoraSuegami/octopus-contract-paper/blob/11ce8419a831c5db901ba9670af50335ae1e0865/octopus_contract_swe_1215.pdf"
+  #     - title: "Suegami, S., Oguri, Y., Zhao, Z., Kagaya, Y., Mukai, K., Yoshida, S., Chen F., and Yamasaki, T., Self-Examination Mechanism: Improving Standard Accuracy in Adversarial Purification, IVSP 2024."
+  #       content: We are developed a product which can help others.
   # projects
-  projects:
-    enable: false
-    # title: "Custom Name"
-    items:
-      - title: Hugo Profile
-        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
-        image: /images/projects/profile.png
-        featured:
-          name: Demo
-          link: https://hugo-profile.netlify.app
-        badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
-        links:
-          - icon: fa fa-envelope
-            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/hugo-profile
-          - icon: fab fa-twitter
-            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+  # projects:
+  #   enable: true
+  #   title: "研究開発実績"
+  #   items:
+  #     - title: Hugo Profile
+  #       content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
+        # image: /images/projects/profile.png
+        # featured:
+        #   name: Demo
+        #   link: https://hugo-profile.netlify.app
+        # badges:
+        #   - "Hugo"
+        #   - "Bootstrap"
+        #   - "Javascript"
+        # links:
+        #   - icon: fa fa-envelope
+        #     url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+        #   - icon: fab fa-github
+        #     url: https://github.com/gurusabarish/hugo-profile
+        #   - icon: fab fa-twitter
+        #     url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
 
-      - title: Image Converter
-        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
-        image: /images/projects/converter.jpg
-        featured:
-          name: Demo
-          link: https://django-converter.herokuapp.com
-        badges:
-          - "Django"
-          - "Bootstrap"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
+      # - title: Image Converter
+      #   content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
+      #   image: /images/projects/converter.jpg
+      #   featured:
+      #     name: Demo
+      #     link: https://django-converter.herokuapp.com
+      #   badges:
+      #     - "Django"
+      #     - "Bootstrap"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/gurusabarish/converter
 
-      - title: Hugo Profile V2
-        content: A clean and simple Hugo template for personal portfolio and blog.
-        image: /images/projects/profile2.jpg
-        featured:
-          name: Demo V2
-          link: https://hugo-profile-2.netlify.app
-        badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
+      # - title: Hugo Profile V2
+      #   content: A clean and simple Hugo template for personal portfolio and blog.
+      #   image: /images/projects/profile2.jpg
+      #   featured:
+      #     name: Demo V2
+      #     link: https://hugo-profile-2.netlify.app
+      #   badges:
+      #     - "Hugo"
+      #     - "Bootstrap"
+      #     - "Javascript"
+      #   links:
+      #     - icon: fab fa-github
+      #       url: https://github.com/gurusabarish/HugoProfileV2
 
   #Contact
   contact:
