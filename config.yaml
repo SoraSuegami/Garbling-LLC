@@ -368,10 +368,10 @@ params:
 
       住所: 〒1040061 東京都中央区銀座7丁目13番21号 銀座sinrokusyuビル2階
 
-      メールアドレス: suegamisora@gmail.com
+      メールアドレス: suegamisora@garbling.org
 
     btnName: メールを送信
-    btnLink: mailto:suegamisora@gmail.com
+    btnLink: mailto:suegamisora@garbling.org
     # formspree:
     #   enable: true # `contact.email` value will be ignored
     #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
